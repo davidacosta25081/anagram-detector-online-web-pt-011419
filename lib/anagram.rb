@@ -6,7 +6,7 @@ attr_accessor :word
     @word = word
   end
 
-  def match(%w array)
+  def match(array)
     array.collect {|x| x.chars.sort.join == @word.chars.sort.join}
   end
 
